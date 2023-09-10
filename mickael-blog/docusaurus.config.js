@@ -20,6 +20,9 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'MickaelCRL', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -36,7 +39,7 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({     
+      ({
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -62,8 +65,8 @@ const config = {
           alt: 'Mickaël Céraline Logo',
           src: 'img/logo.svg',
         },
-        items: [         
-          {to: '/blog', label: 'Blog', position: 'left'},
+        items: [
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
