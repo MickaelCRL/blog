@@ -6,12 +6,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'mickaelceraline',
+  title: 'Mickaël Céraline',
   tagline: 'Bienvenu sur mon site',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://mickaelceraline.com',
+  url: 'https://www.mickaelceraline.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -21,11 +21,10 @@ const config = {
   organizationName: 'MickaelCRL', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-
   trailingSlash: false,
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
