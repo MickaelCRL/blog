@@ -1,0 +1,69 @@
+.background-image {
+  background-image: url("/static/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; /* Utilisation de la hauteur de la vue (viewport height) pour couvrir l'écran */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  color: #fff; /* Couleur du texte */
+}
+
+.background-image h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.background-image p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  /* margin-top: 170vh; Décalez le contenu vers le bas par la hauteur de l'image héros */
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.intro{
+  color: white;
+  margin-top: 120vh;
+  margin-bottom: 0vh; /* Pour centrer verticalement au milieu de l'image */
+  text-align: center; 
+  font-size: 3px;
+  font-family: Arial, sans-serif;
+}
+
+.suite{
+  margin-top: 60vh;
+ 
+}
+
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-text {
+  order: 2; /* Fait en sorte que le texte occupe tout l'espace disponible à gauche */
+  text-align: left; /* Aligner le texte à gauche */
+  margin-left: 10px; /* Ajouter un peu d'espace autour du texte */
+  max-width: 50%;
+  margin-right: 3%;
+}
+
+.left-image {
+  order: 1; /* Fait en sorte que l'image occupe tout l'espace disponible à droite */
+  text-align: left; /* Aligner l'image à droite */
+  max-width: 50%;
+  margin-left: 3%;
+}
+
+.left-image img {
+  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
+  height: auto; /* Garantit que l'image conserve ses proportions */
+}

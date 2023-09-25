@@ -57,13 +57,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+
+      // stylesheets: [
+      //   {
+      //     href: '/css/mycss.css', // Chemin d'accès à votre fichier CSS personnalisé
+      //   },
+      // ],
+
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Mickaël Céraline',
+       
+        title: 'Mickaël Céraline',        
         logo: {
           alt: 'Mickaël Céraline Logo',
-          src: 'img/logo.svg',
+          src: 'img/MC.svg',         
         },
+  
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -75,30 +84,13 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+        links: [          
           {
             title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+            items: [           
+             {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/mickael-ceraline/',
               },
             ],
           },
@@ -111,7 +103,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/MickaelCRL',
               },
             ],
           },
