@@ -43,8 +43,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -70,13 +69,15 @@ const config = {
         title: 'Mickaël Céraline',        
         logo: {
           alt: 'Mickaël Céraline Logo',
-          src: 'img/MC.svg',         
+          src: 'img/MC.svg',                
         },
+        hideOnScroll: true,
+        
   
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/mickaelcrl',
             label: 'GitHub',
             position: 'right',
           },
@@ -108,7 +109,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} mickaelceraline.com`,
       },
       prism: {
         theme: lightCodeTheme,

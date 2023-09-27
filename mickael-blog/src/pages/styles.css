@@ -3,13 +3,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh; /* Utilisation de la hauteur de la vue (viewport height) pour couvrir l'écran */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  text-align: center;
-  color: #fff; /* Couleur du texte */
+  position: absolute;
+  height: 100%; /* Utilisation de la hauteur de la vue (viewport height) pour couvrir l'écran */
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .background-image h1 {
@@ -22,48 +20,79 @@
   margin-bottom: 30px;
 }
 
-.main-content {
-  /* margin-top: 170vh; Décalez le contenu vers le bas par la hauteur de l'image héros */
-  color: black;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .intro{
-  color: white;
-  margin-top: 120vh;
-  margin-bottom: 0vh; /* Pour centrer verticalement au milieu de l'image */
+  color: white;  
+  margin-top: 20vh;
   text-align: center; 
   font-size: 3px;
   font-family: Arial, sans-serif;
 }
 
-.suite{
-  margin-top: 60vh;
- 
+.image-about-me {
+   /* Fait en sorte que l'image occupe tout l'espace disponible à droite */
+  /* text-align: center;   */
+  /*Aligner l'image à droite */
+  max-width: 100%;
+  margin: 400px 0;
 }
 
-.section1{
-  display: flex;
-  justify-content: space-between;
-}
-
-.right-text {
-  order: 2; /* Fait en sorte que le texte occupe tout l'espace disponible à gauche */
-  text-align: left; /* Aligner le texte à gauche */
-  margin-left: 10px; /* Ajouter un peu d'espace autour du texte */
-  max-width: 50%;
-  margin-right: 3%;
-}
-
-.left-image {
-  order: 1; /* Fait en sorte que l'image occupe tout l'espace disponible à droite */
-  text-align: left; /* Aligner l'image à droite */
-  max-width: 50%;
-  margin-left: 3%;
-}
-
-.left-image img {
+.image-about-me img {
   max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
-  height: auto; /* Garantit que l'image conserve ses proportions */
+  height: 450px; /* Garantit que l'image conserve ses proportions */
+  border-radius: 450px;
 }
+.about-me{
+
+}
+
+.competence h2{
+  text-align: center;
+}
+
+.three-column-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacement entre les colonnes */
+  list-style: none; /* Supprimer les puces de la liste */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour chaque colonne */
+.columns-container {
+  display: flex;
+   /* Espacement égal entre les colonnes */
+}
+
+/* Style pour chaque colonne */
+.column {
+  flex: 1; /* Chaque colonne a une largeur égale */
+  padding: 20px;  
+  text-align: center; /* Centre le texte horizontalement dans la colonne */
+}
+
+/* Style de base pour les listes à puces */
+ul.custom-list-style {
+  list-style: none; /* Supprime les puces de la liste */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style des puces */
+ul.custom-list-style {  
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style des éléments de liste */
+ul.custom-list-style li {
+  margin-bottom: 5px;
+}
+
+/* Style des liens à l'intérieur des éléments de liste */
+ul.custom-list-style a {
+  text-decoration: none;
+  color: #333;
+}
+
