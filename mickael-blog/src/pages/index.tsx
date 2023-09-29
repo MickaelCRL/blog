@@ -16,22 +16,26 @@ import styles from "./index.module.css";
 function HomeIntro() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <main>
+    <section>
       <div className="intro">
         <h1>
           Développeur Full Stack
           <br />à Paris
         </h1>
       </div>
-      <button>Me Contacter</button>
-    </main>
+      <form action="https://www.mickaelceraline.com/blog">
+        <button className="custom-button center-button" type="submit">
+          Voir Mon Blog
+        </button>
+      </form>
+    </section>
   );
 }
 
 function HomeAboutMe() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <main>
+    <section className="about-me-container">
       <div className="image-about-me">
         <img src="/img/mickaelceraline.jpg" alt="Image à propos de moi" />
       </div>
@@ -48,67 +52,80 @@ function HomeAboutMe() {
           compétences en programmation.
         </p>
       </div>
-    </main>
+    </section>
   );
 }
 
 function HomeCompetence() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <main>
-      <div className="competence">
-        <h2>Compétences</h2>
-        <div className="columns-container">
-          <div className="column">
-            <h2>Langages de programmation</h2>
-            <ul className="custom-list-style">
-              <li>C#</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>Python</li>
-              <li>PHP</li>
-              <li>PL/SQL</li>
-            </ul>
-          </div>
-          <div className="column">
-            <h2>Technologies web</h2>
-            <ul className="custom-list-style">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div className="column">
-            <h2>Frameworks JavaScript</h2>
-            <ul className="custom-list-style">
-              <li>Angular</li>
-              <li>React</li>
-            </ul>
+    <section>
+      <div className="skill-container">
+        <div className="skill-text">
+          <h2>Compétences</h2>
+          <p>
+            Mon parcours est caractérisé par une progression constante. Au fil
+            des années, j'ai eu l'opportunité d'explorer diverses technologies
+            et langages de programmation, aboutissant à une liste non exhaustive
+            de mes compétences.
+          </p>
+          <div className="skill-grid">
+            <div>
+              <strong>Langages de programmation :</strong>
+            </div>
+            <div>C#, Java, Python, C++, PHP, PL/SQL</div>
+            <div>
+              <strong>Technologies web :</strong>
+            </div>
+            <div>HTML5, CSS3, JavaScript</div>
+            <div>
+              <strong>Frameworks JavaScript : </strong>
+            </div>
+            <div>Angular, React</div>
           </div>
         </div>
+        <div className="image-skill">
+          <img
+            src="/img/skill.svg"
+            alt="Image illustrative de vos compétences"
+          />
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
 
 function HomeCertification() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <main>
+    <section className="certification-container">
       <h2>My certification</h2>
-      <div>
+      <div className="centered-content">
         <img
           src="/img/foundational-csharp-certification.png"
           alt="certification image"
+          className="centered-image"
         />
       </div>
-    </main>
+    </section>
   );
 }
 
 function HomeContact() {
   const { siteConfig } = useDocusaurusContext();
-  return <main></main>;
+  return (
+    <section>
+      <div className="contact">
+        <h2>Me Contacter</h2>
+        <p>
+          Vous pouvez me contacter à l'adresse email suivante :&nbsp;
+          <a href="mailto:mickael.ceraline@universite-paris-saclay.fr">
+            mickael.ceraline@universite-paris-saclay.fr
+          </a>
+        </p>
+      </div>
+    </section>
+  );
 }
 
 export default function Home(): JSX.Element {

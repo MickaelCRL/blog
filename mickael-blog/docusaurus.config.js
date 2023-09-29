@@ -72,6 +72,7 @@ const config = {
           src: 'img/MC.svg',                
         },
         hideOnScroll: true,
+
         
   
         items: [
@@ -96,7 +97,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'More',            
             items: [
               {
                 label: 'Blog',

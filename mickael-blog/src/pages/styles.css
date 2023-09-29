@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Poppins;
+  src: url(/static/Poppins-Regular.ttf);
+}
+
 .background-image {
   background-image: url("/static/img/hero.jpg");
   background-size: cover;
@@ -20,79 +25,143 @@
   margin-bottom: 30px;
 }
 
-.intro{
-  color: white;  
-  margin-top: 20vh;
-  text-align: center; 
-  font-size: 3px;
-  font-family: Arial, sans-serif;
+section {
+  margin: 100px 50px;
 }
 
-.image-about-me {
-   /* Fait en sorte que l'image occupe tout l'espace disponible à droite */
-  /* text-align: center;   */
-  /*Aligner l'image à droite */
-  max-width: 100%;
-  margin: 400px 0;
+.intro {
+  color: white;
+  margin-top: 13vh;
+  text-align: center;
+  font-family: Poppins, sans-serif;
 }
 
+
+.about-me-container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement les éléments enfants */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  /* Ajoutez un espacement autour du contenu */
+  margin-top: 40vh;
+}
+
+/* Styles pour l'image */
 .image-about-me img {
   max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
-  height: 450px; /* Garantit que l'image conserve ses proportions */
-  border-radius: 450px;
-}
-.about-me{
-
+  height: 400px; /* Empêchez la déformation de l'image */
+  border-radius: 50%; /* Ajoutez un coin arrondi à l'image (pour une image circulaire) */
+  margin-right: 70px;
 }
 
-.competence h2{
-  text-align: center;
+/* Styles pour le texte */
+.about-me {
+  margin-left: 20px; /* Espacement entre l'image et le texte */
+  max-width: 600px; /* Limitez la largeur du texte si nécessaire */
+  text-align: left; /* Centre le texte horizontalement */
 }
 
-.three-column-list {
+.skill-container {
+  display: flex; /* Affiche les éléments en ligne (côte à côte) */
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: space-between; /* Répartit l'espace entre les éléments */
+}
+
+/* Styles pour la div de texte */
+.skill-text {
+  flex-basis: 50%; /* Définit la largeur de la div de texte */
+  text-align: left; /* Centre le contenu horizontalement */
+}
+
+/* Style pour le titre "Compétences" */
+.skill-text h2 {
+  font-size: 32px; /* Taille de police pour le titre */
+  font-weight: bold; 
+  margin-bottom: 16px; /* Espacement en bas du titre */
+}
+
+/* Styles pour les titres des compétences (Langages, Technologies, Frameworks) */
+.skill-text h3 {
+  font-size: 24px; /* Taille de police pour les titres des compétences */
+  margin-top: 16px; /* Espacement en haut des titres des compétences */
+}
+
+/* Styles pour le texte des compétences (Liste de compétences) */
+.skill-text p {
+  font-size: 18px; /* Taille de police pour le texte des compétences */
+  margin-bottom: 16px; /* Espacement en bas du texte des compétences */
+}
+
+.skill-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Espacement entre les colonnes */
-  list-style: none; /* Supprimer les puces de la liste */
-  padding: 0;
-  margin: 0;
+  grid-template-columns: 1fr 1.5fr; 
+    
+}
+.skill-grid div{
+  margin-bottom: 10px;
 }
 
-/* Style pour chaque colonne */
-.columns-container {
+
+/* Styles pour la div de l'image */
+.image-skill {
+  flex-basis: 40%; /* Définit la largeur de la div de l'image */
+  text-align: center; /* Centre l'image horizontalement */
+}
+
+.image-skill img {
+  max-width: 300px; 
+ 
+}
+
+.custom-button {
+  background-color: #fff; /* Couleur de fond de votre bouton */
+  color: #000; /* Couleur du texte de votre bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  margin: 10px 15px;
+  border: none; /* Supprimez la bordure du bouton */
+  border-radius: 5px; /* Ajoutez un coin arrondi */
+  cursor: pointer; /* Changez le curseur au survol */ 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Centrez le bouton horizontalement */
+.center-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.certification-container {
   display: flex;
-   /* Espacement égal entre les colonnes */
+  flex-direction: column; /* Alignez les éléments verticalement */
+  justify-content: center; /* Centrez les éléments verticalement */
+  align-items: center; /* Centrez les éléments horizontalement */
+  text-align: center; /* Centrez le texte horizontalement */
+  height: 520px; /* Assurez-vous que le conteneur occupe toute la hauteur de la vue */
 }
 
-/* Style pour chaque colonne */
-.column {
-  flex: 1; /* Chaque colonne a une largeur égale */
-  padding: 20px;  
-  text-align: center; /* Centre le texte horizontalement dans la colonne */
+.certification-container img {
+  text-align: center; /* Centrez le texte horizontalement */
+  height: 520px; /* Assurez-vous que le conteneur occupe toute la hauteur de la vue */
 }
 
-/* Style de base pour les listes à puces */
-ul.custom-list-style {
-  list-style: none; /* Supprime les puces de la liste */
-  padding: 0;
-  margin: 0;
+/* Styles pour l'image */
+.centered-image {
+  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
+  height: auto; /* Empêchez la déformation de l'image */
 }
 
-/* Style des puces */
-ul.custom-list-style {  
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
+/* Styles pour le texte (si nécessaire) */
+.certification-container h2 {
+  margin-bottom: 20px; /* Espacement sous le titre */
 }
 
-/* Style des éléments de liste */
-ul.custom-list-style li {
-  margin-bottom: 5px;
-}
-
-/* Style des liens à l'intérieur des éléments de liste */
-ul.custom-list-style a {
-  text-decoration: none;
-  color: #333;
+.container{
+  text-align: center;
 }
 
