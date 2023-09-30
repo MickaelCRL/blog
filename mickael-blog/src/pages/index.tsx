@@ -125,8 +125,8 @@ function HomeContact() {
         <h2>Me Contacter</h2>
         <p>
           Vous pouvez me contacter à l'adresse email suivante :&nbsp;
-          <a href="mailto:mickael.ceraline@universite-paris-saclay.fr">
-            mickael.ceraline@universite-paris-saclay.fr
+          <a href="mailto:mickael.ceraline@outlook.com">
+            mickael.ceraline@outlook.com
           </a>
         </p>
       </div>

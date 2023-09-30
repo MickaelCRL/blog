@@ -33,7 +33,7 @@ section {
   display: flex;
   align-items: center; 
   flex-direction: column;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 #intro{
@@ -117,7 +117,7 @@ section {
 
 .skill-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr; 
+  grid-template-columns: 1.5fr 1.5fr; 
     
 }
 .skill-grid div{
