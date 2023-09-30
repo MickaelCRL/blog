@@ -3,15 +3,13 @@
   src: url(/static/Poppins-Regular.ttf);
 }
 
-
-
 .background-image {
   background-image: url("/static/img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  height: 100%; /* Utilisation de la hauteur de la vue (viewport height) pour couvrir l'écran */
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -27,123 +25,107 @@
   margin-bottom: 30px;
 }
 
-section {  
-  width: 100%;   
+section {
+  width: 100%;
   height: auto;
   display: flex;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
   margin: 100px 0;
 }
 
-#intro{
+#intro {
   margin-top: -60px;
   height: 100vh;
-  
 }
 
-.container-section{
+.container-section {
   width: 1024px;
   height: 100%;
   display: flex;
   align-items: center;
-
 }
 
 .intro {
-  color: white; 
+  color: white;
   text-align: center;
-  font-family: Poppins, sans-serif; 
+  font-family: Poppins, sans-serif;
   margin: 0;
   width: 100%;
 }
 
-
 .about-me-container {
   display: flex;
-  justify-content: center; /* Centre horizontalement les éléments enfants */
-  align-items: center; /* Centre verticalement les éléments enfants */
-  /* Ajoutez un espacement autour du contenu */
- 
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styles pour l'image */
 .image-about-me img {
-  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
-  height: auto; /* Empêchez la déformation de l'image */
-  border-radius: 50%; /* Ajoutez un coin arrondi à l'image (pour une image circulaire) */
-  
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
-.gap{
+.gap {
   gap: 75px;
 }
 
-/* Styles pour le texte */
-.about-me { 
-  max-width: 600px; /* Limitez la largeur du texte si nécessaire */
-  text-align: left; /* Centre le texte horizontalement */
+.about-me {
+  max-width: 600px;
+  text-align: left;
 }
 
 .skill-container {
-  display: flex; /* Affiche les éléments en ligne (côte à côte) */
-  align-items: center; /* Centre les éléments verticalement */
-  justify-content: space-between; /* Répartit l'espace entre les éléments */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Styles pour la div de texte */
 .skill-text {
-  flex-basis: 50%; /* Définit la largeur de la div de texte */
-  text-align: left; /* Centre le contenu horizontalement */
+  flex-basis: 50%;
+  text-align: left;
 }
 
-/* Style pour le titre "Compétences" */
 .skill-text h2 {
-  font-size: 32px; /* Taille de police pour le titre */
-  font-weight: bold; 
-  margin-bottom: 16px; /* Espacement en bas du titre */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
-/* Styles pour les titres des compétences (Langages, Technologies, Frameworks) */
 .skill-text h3 {
-  font-size: 24px; /* Taille de police pour les titres des compétences */
-  margin-top: 16px; /* Espacement en haut des titres des compétences */
+  font-size: 24px;
+  margin-top: 16px;
 }
 
-/* Styles pour le texte des compétences (Liste de compétences) */
 .skill-text p {
-  font-size: 18px; /* Taille de police pour le texte des compétences */
-  margin-bottom: 16px; /* Espacement en bas du texte des compétences */
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
 .skill-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr; 
-    
+  grid-template-columns: 1.5fr 1.5fr;
 }
-.skill-grid div{
+.skill-grid div {
   margin-bottom: 10px;
 }
 
-
-/* Styles pour la div de l'image */
 .image-skill {
-  flex-basis: 40%; /* Définit la largeur de la div de l'image */
-  text-align: center; /* Centre l'image horizontalement */
+  flex-basis: 40%;
+  text-align: center;
 }
 
 .image-skill img {
-  max-width: 300px; 
- 
+  max-width: 300px;
 }
 
 .custom-button {
-  background-color: #fff; /* Couleur de fond de votre bouton */
-  color: #000; /* Couleur du texte de votre bouton */
-  padding: 10px 20px; /* Espacement interne du bouton */
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
   margin: 10px 15px;
-  border: none; /* Supprimez la bordure du bouton */
-  border-radius: 5px; /* Ajoutez un coin arrondi */
-  cursor: pointer; /* Changez le curseur au survol */ 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -151,8 +133,6 @@ section {
   background-color: #000;
   color: #fff;
 }
-
-/* Centrez le bouton horizontalement */
 .center-button {
   display: block;
   margin: 0 auto;
@@ -162,32 +142,27 @@ section {
 
 .certification-container {
   display: flex;
-  flex-direction: column; /* Alignez les éléments verticalement */
-  justify-content: center; /* Centrez les éléments verticalement */
-  align-items: center; /* Centrez les éléments horizontalement */
-  text-align: center; /* Centrez le texte horizontalement */
-  height: 520px; /* Assurez-vous que le conteneur occupe toute la hauteur de la vue */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 520px;
 }
 
 .certification-container img {
-  text-align: center; /* Centrez le texte horizontalement */
-  height: 520px; /* Assurez-vous que le conteneur occupe toute la hauteur de la vue */
+  text-align: center;
+  height: 520px;
 }
 
-/* Styles pour l'image */
 .centered-image {
-  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
-  height: auto; /* Empêchez la déformation de l'image */
+  max-width: 100%;
+  height: auto;
 }
 
-/* Styles pour le texte (si nécessaire) */
 .certification-container h2 {
-  margin-bottom: 20px; /* Espacement sous le titre */
+  margin-bottom: 20px;
 }
 
-.block{
+.block {
   display: block;
 }
-
-
-
