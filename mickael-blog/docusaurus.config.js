@@ -56,13 +56,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-
-      // stylesheets: [
-      //   {
-      //     href: '/css/mycss.css', // Chemin d'accès à votre fichier CSS personnalisé
-      //   },
-      // ],
 
       image: 'img/docusaurus-social-card.jpg',
       navbar: {

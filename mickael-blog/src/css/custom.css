@@ -30,7 +30,7 @@
   transition: background-color 0.3s ease;
 }
 
-.container {
+.footer .container {
   text-align: center;
 }
 
@@ -41,5 +41,9 @@ h2 {
 }
 
 .mc-p {
+  text-align: left;
+}
+
+.mc-h2 {
   text-align: left;
 }

@@ -132,9 +132,9 @@ section {
 .custom-button:hover {
   background-color: #000;
   color: #fff;
+  text-decoration: none;
 }
 .center-button {
-  display: block;
   margin: 0 auto;
   margin-top: 50px;
   font-size: 24px;

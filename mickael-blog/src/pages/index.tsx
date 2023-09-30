@@ -18,11 +18,13 @@ function HomeIntro() {
             Développeur Full Stack
             <br />à Paris
           </h1>
-          <form action="https://www.mickaelceraline.com/blog">
-            <button className="custom-button center-button" type="submit">
-              Voir Mon Blog
-            </button>
-          </form>
+
+          <a
+            className="custom-button center-button"
+            href="https://www.mickaelceraline.com/blog"
+          >
+            Voir Le Blog
+          </a>
         </div>
       </div>
     </section>
@@ -97,9 +99,9 @@ function HomeCompetence() {
 function HomeCertification() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <section>
+    <section>      
       <div className="block container-section ">
-        <h2>My certification</h2>
+        <h2>Ma certification</h2>
         <div className="certification">
           <img
             src="/img/foundational-csharp-certification.png"
@@ -117,9 +119,10 @@ function HomeContact() {
   return (
     <section>
       <div className="block container-section ">
-        <h2>Me Contacter</h2>
+        <h2>Me contacter</h2>
         <p>
-          Vous pouvez me contacter à l'adresse email suivante :&nbsp;
+          Pour toutes vos questions, suggestions ou collaborations, n'hésitez
+          pas à me joindre par email à l'adresse suivante :&nbsp;
           <a href="mailto:mickael.ceraline@outlook.com">
             mickael.ceraline@outlook.com
           </a>
@@ -134,8 +137,8 @@ export default function Home(): JSX.Element {
   return (
     <div className="background-image">
       <Layout
-        title={`Hello from ${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />"
+        title={`${siteConfig.title} | Développeur Full Stack`}
+        description="Mickaël Céraline est un jeune développeur Full Stack Angular & .NET C#, passionné par la création web avec une volonté d'apprendre en continu. Découvrez mon parcours et mes projets. <head />"
       >
         <HomeIntro />
         <HomeAboutMe />
