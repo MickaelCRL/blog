@@ -71,9 +71,7 @@ const config = {
           alt: 'Mickaël Céraline Logo',
           src: 'img/MC.svg',                
         },
-        hideOnScroll: true,
-
-        
+        hideOnScroll: true,        
   
         items: [
           { to: '/blog', label: 'Blog', position: 'left' },

@@ -3,6 +3,8 @@
   src: url(/static/Poppins-Regular.ttf);
 }
 
+
+
 .background-image {
   background-image: url("/static/img/hero.jpg");
   background-size: cover;
@@ -25,15 +27,33 @@
   margin-bottom: 30px;
 }
 
-section {
-  margin: 100px 50px;
+section {  
+  width: 100%;   
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+}
+
+#intro{
+  margin-top: -60px;
+  
+}
+
+.container-section{
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
 }
 
 .intro {
-  color: white;
-  margin-top: 13vh;
+  color: white; 
   text-align: center;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, sans-serif; 
+  margin: 0;
+  width: 100%;
 }
 
 
@@ -42,7 +62,7 @@ section {
   justify-content: center; /* Centre horizontalement les éléments enfants */
   align-items: center; /* Centre verticalement les éléments enfants */
   /* Ajoutez un espacement autour du contenu */
-  margin-top: 40vh;
+ 
 }
 
 /* Styles pour l'image */
@@ -160,7 +180,9 @@ section {
   margin-bottom: 20px; /* Espacement sous le titre */
 }
 
-.container{
-  text-align: center;
+.block{
+  display: block;
 }
+
+
 

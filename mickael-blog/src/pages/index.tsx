@@ -16,18 +16,20 @@ import styles from "./index.module.css";
 function HomeIntro() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <section>
+    <section id="intro">
+      <div className="container-section">
       <div className="intro">
         <h1>
           Développeur Full Stack
           <br />à Paris
         </h1>
-      </div>
-      <form action="https://www.mickaelceraline.com/blog">
+        <form action="https://www.mickaelceraline.com/blog">
         <button className="custom-button center-button" type="submit">
           Voir Mon Blog
         </button>
       </form>
+      </div>
+      </div>     
     </section>
   );
 }
@@ -35,7 +37,8 @@ function HomeIntro() {
 function HomeAboutMe() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <section className="about-me-container">
+    <section>
+      <div className="container-section">
       <div className="image-about-me">
         <img src="/img/mickaelceraline.jpg" alt="Image à propos de moi" />
       </div>
@@ -52,6 +55,7 @@ function HomeAboutMe() {
           compétences en programmation.
         </p>
       </div>
+      </div>
     </section>
   );
 }
@@ -60,7 +64,7 @@ function HomeCompetence() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <section>
-      <div className="skill-container">
+      <div className="container-section">
         <div className="skill-text">
           <h2>Compétences</h2>
           <p>
@@ -98,14 +102,16 @@ function HomeCompetence() {
 function HomeCertification() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <section className="certification-container">
+    <section>
+       <div className="block container-section ">
       <h2>My certification</h2>
-      <div className="centered-content">
+      <div className="certification">
         <img
           src="/img/foundational-csharp-certification.png"
           alt="certification image"
           className="centered-image"
         />
+      </div>
       </div>
     </section>
   );
@@ -115,7 +121,7 @@ function HomeContact() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <section>
-      <div className="contact">
+      <div className="block container-section ">
         <h2>Me Contacter</h2>
         <p>
           Vous pouvez me contacter à l'adresse email suivante :&nbsp;
