@@ -70,7 +70,10 @@ section {
   max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
   height: auto; /* Empêchez la déformation de l'image */
   border-radius: 50%; /* Ajoutez un coin arrondi à l'image (pour une image circulaire) */
- gap: 75px;
+  
+}
+.gap{
+  gap: 75px;
 }
 
 /* Styles pour le texte */

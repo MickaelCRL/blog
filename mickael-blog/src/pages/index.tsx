@@ -18,18 +18,18 @@ function HomeIntro() {
   return (
     <section id="intro">
       <div className="container-section">
-      <div className="intro">
-        <h1>
-          Développeur Full Stack
-          <br />à Paris
-        </h1>
-        <form action="https://www.mickaelceraline.com/blog">
-        <button className="custom-button center-button" type="submit">
-          Voir Mon Blog
-        </button>
-      </form>
+        <div className="intro">
+          <h1>
+            Développeur Full Stack
+            <br />à Paris
+          </h1>
+          <form action="https://www.mickaelceraline.com/blog">
+            <button className="custom-button center-button" type="submit">
+              Voir Mon Blog
+            </button>
+          </form>
+        </div>
       </div>
-      </div>     
     </section>
   );
 }
@@ -38,23 +38,23 @@ function HomeAboutMe() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <section>
-      <div className="container-section">
-      <div className="image-about-me">
-        <img src="/img/mickaelceraline.jpg" alt="Image à propos de moi" />
-      </div>
+      <div className="container-section gap">
+        <div className="image-about-me">
+          <img src="/img/mickaelceraline.jpg" alt="Image à propos de moi" />
+        </div>
 
-      <div className="about-me">
-        <h2>À propos de moi</h2>
-        <p>
-          Salut, je suis Mickaël Céraline. Étudiant en informatique à l'IUT
-          d'Orsay. <br />
-          Passionné par l'informatique, j'aime résoudre des problèmes et
-          explorer de nouvelles technologies. <br />
-          En dehors de mes études, je m'investis dans des projets innovants et
-          je cherche toujours de nouvelles opportunités pour développer mes
-          compétences en programmation.
-        </p>
-      </div>
+        <div className="about-me">
+          <h2>À propos de moi</h2>
+          <p>
+            Salut, je suis Mickaël Céraline. Étudiant en informatique à l'IUT
+            d'Orsay. <br />
+            Passionné par l'informatique, j'aime résoudre des problèmes et
+            explorer de nouvelles technologies. <br />
+            En dehors de mes études, je m'investis dans des projets innovants et
+            je cherche toujours de nouvelles opportunités pour développer mes
+            compétences en programmation.
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -103,15 +103,15 @@ function HomeCertification() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <section>
-       <div className="block container-section ">
-      <h2>My certification</h2>
-      <div className="certification">
-        <img
-          src="/img/foundational-csharp-certification.png"
-          alt="certification image"
-          className="centered-image"
-        />
-      </div>
+      <div className="block container-section ">
+        <h2>My certification</h2>
+        <div className="certification">
+          <img
+            src="/img/foundational-csharp-certification.png"
+            alt="certification image"
+            className="centered-image"
+          />
+        </div>
       </div>
     </section>
   );
