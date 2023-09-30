@@ -48,14 +48,13 @@ section {
 /* Styles pour l'image */
 .image-about-me img {
   max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
-  height: 400px; /* Empêchez la déformation de l'image */
+  height: auto; /* Empêchez la déformation de l'image */
   border-radius: 50%; /* Ajoutez un coin arrondi à l'image (pour une image circulaire) */
-  margin-right: 70px;
+ gap: 75px;
 }
 
 /* Styles pour le texte */
-.about-me {
-  margin-left: 20px; /* Espacement entre l'image et le texte */
+.about-me { 
   max-width: 600px; /* Limitez la largeur du texte si nécessaire */
   text-align: left; /* Centre le texte horizontalement */
 }
