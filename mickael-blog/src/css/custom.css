@@ -18,31 +18,28 @@
   --ifm-color-primary-lighter: #1e2891;
   --ifm-color-primary-lightest: #222da4;
   --ifm-code-font-size: 95%;
-  --ifm-navbar-background-color : transparent;
+  --ifm-navbar-background-color: transparent;
   --ifm-heading-font-family: Poppins, sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
-.navbar-sidebar{
+.navbar-sidebar {
   background-color: #fff;
 }
-.navbar{
+.navbar {
   box-shadow: none;
   transition: background-color 0.3s ease;
 }
 
-.container{
+.container {
   text-align: center;
 }
 
 h2 {
-  font-size: 32px; /* Taille de police pour les titres de section */
-  font-weight: bold; /* Épaisseur de la police (en gras) */
-  margin-bottom: 24px; /* Espacement en bas des titres */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
-
-.mc-p{
+.mc-p {
   text-align: left;
 }
-
-

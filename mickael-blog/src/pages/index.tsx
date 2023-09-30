@@ -8,11 +8,6 @@ import "./styles.css";
 
 import styles from "./index.module.css";
 
-// function HomepageHeader() {
-//   const { siteConfig } = useDocusaurusContext();
-//   return <header></header>;
-// }
-
 function HomeIntro() {
   const { siteConfig } = useDocusaurusContext();
   return (
