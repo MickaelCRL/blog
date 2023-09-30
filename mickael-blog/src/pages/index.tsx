@@ -59,7 +59,7 @@ function HomeCompetence() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <section>
-      <div className="container-section">
+      <div className="container-section gap">
         <div className="skill-text">
           <h2>Compétences</h2>
           <p>

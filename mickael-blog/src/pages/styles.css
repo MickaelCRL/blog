@@ -166,3 +166,156 @@ section {
 .block {
   display: block;
 }
+
+/* Ajout d'un media query pour une vue mobile */
+@media (max-width: 1022px) {
+  .background-image h1 {
+    font-size: 2rem;
+  }
+
+  .background-image p {
+    font-size: 1.2rem;
+  }
+
+  section {
+    margin: 50px 0;
+  }
+
+  .container-section {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .image-about-me img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .skill-text{
+    order: 2;
+  }
+  .image-skill{
+    order: 1;
+  }
+
+  .skill-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .skill-text h3 {
+    font-size: 20px;
+  }
+
+  .skill-text p {
+    font-size: 16px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .center-button {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .certification-container {
+    height: auto;
+  }
+
+  .certification-container img {
+    height: auto;
+  }
+
+  .certification-container h2 {
+    font-size: 20px;
+  }
+  
+  /* Ajoutez d'autres styles pour la vue mobile ici */
+}
+
+@media (max-width: 325px) {
+  .background-image h1 {
+    font-size: 1.5rem; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .background-image p {
+    font-size: 1rem; /* Ajustez la taille de la police selon vos préférences */
+    margin-bottom: 10px; /* Ajoutez un espace entre les paragraphes */
+  }
+
+  section {
+    margin: 30px 0; /* Ajustez la marge selon vos préférences */
+  }
+
+  .container-section {
+    width: 100%;
+    padding: 10px; /* Ajustez la taille de la marge intérieure selon vos préférences */
+    display: block; /* Changez la disposition pour une vue mobile */
+  }
+
+  .intro {
+    font-size: 1rem; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .image-about-me img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Ajoutez un espace entre l'image et le texte */
+  }
+
+  .skill-text {
+    order: 1; /* Changez l'ordre pour afficher le texte avant l'image */
+    text-align: center; /* Centrez le texte */
+  }
+
+  .image-skill {
+    order: 2; /* Changez l'ordre pour afficher l'image après le texte */
+    text-align: center; /* Centrez l'image */
+  }
+
+  .skill-text h2 {
+    font-size: 18px; /* Ajustez la taille de la police selon vos préférences */
+    margin-bottom: 8px; /* Ajustez la marge inférieure selon vos préférences */
+  }
+
+  .skill-text h3 {
+    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .skill-text p {
+    font-size: 14px; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr; /* Une seule colonne pour les compétences */
+  }
+
+  .center-button {
+    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+    margin-top: 10px; /* Ajustez la marge supérieure selon vos préférences */
+  }
+
+  .certification-container {
+    height: auto;
+  }
+
+  .certification-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .certification-container h2 {
+    font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+    margin-bottom: 10px; /* Ajustez la marge inférieure selon vos préférences */
+  }
+  
+  /* Ajoutez d'autres styles pour une vue mobile inférieure à 326px ici */
+}
