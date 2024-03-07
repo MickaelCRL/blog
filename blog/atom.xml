@@ -2,18 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.mickaelceraline.com/blog</id>
     <title>Mickaël Céraline Blog</title>
-    <updated>2024-03-07T19:55:49.000Z</updated>
+    <updated>2024-03-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.mickaelceraline.com/blog"/>
     <subtitle>Mickaël Céraline Blog</subtitle>
     <icon>https://www.mickaelceraline.com/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[02 - Architecture RentCRL]]></title>
+        <title type="html"><![CDATA[Architecture RentCRL]]></title>
         <id>https://www.mickaelceraline.com/blog/architecture-rentcrl</id>
         <link href="https://www.mickaelceraline.com/blog/architecture-rentcrl"/>
-        <updated>2024-03-07T19:55:49.000Z</updated>
+        <updated>2024-03-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[1 - Introduction]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1---introduction"><strong>1 - Introduction</strong><a href="#1---introduction" class="hash-link" aria-label="Lien direct vers 1---introduction" title="Lien direct vers 1---introduction">​</a></h2><p>Dans cet article, je vais vous présenter l'architecture de RentCRL, visant à simplifier la gestion locative en automatisant les tâches telles que la collecte des loyers et la génération des quittances pour les propriétaires.</p><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="2---choix-conceptuels"><strong>2 - Choix Conceptuels</strong><a href="#2---choix-conceptuels" class="hash-link" aria-label="Lien direct vers 2---choix-conceptuels" title="Lien direct vers 2---choix-conceptuels">​</a></h2><p>Pour ce projet de taille modeste, j'ai choisi de réaliser uniquement 3 diagrammes dans ma partie conception pour m'aider à le concrétiser.</p><p>Les voici :</p><p><strong>Diagramme de cas d'utilisation :</strong></p><p><img loading="lazy" alt="architecture-Use-case.jpg" src="/assets/images/architecture-Use-case-f21511df0a35089459e8755366814e78.jpg" width="4374" height="2553" class="img_ev3q"></p><p>Le diagramme de cas d'utilisation de RentCRL illustre les interactions entre les utilisateurs et le système. Les acteurs, tels que les propriétaires, les locataires et les collaborateurs, interagissent avec différentes fonctionnalités de l'application.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="diagramme-de-classe-"><strong>Diagramme de classe :</strong><a href="#diagramme-de-classe-" class="hash-link" aria-label="Lien direct vers diagramme-de-classe-" title="Lien direct vers diagramme-de-classe-">​</a></h3><p><img loading="lazy" alt="architecture-Class-Diagram.jpg" src="/assets/images/architecture-Class-Diagram-0208d21964c7cc2b99097764d4a955f0.jpg" width="4557" height="2691" class="img_ev3q"></p><p>Le diagramme de classe de RentCRL modélise la structure des entités principales et leurs relations.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="diagramme-dinfrastructure-"><strong>Diagramme d'infrastructure :</strong><a href="#diagramme-dinfrastructure-" class="hash-link" aria-label="Lien direct vers diagramme-dinfrastructure-" title="Lien direct vers diagramme-dinfrastructure-">​</a></h3><p><img loading="lazy" alt="architecture-Infrastructure.jpg" src="/assets/images/architecture-Infrastructure-cb317d64892034073032701fae480c22.jpg" width="1254" height="936" class="img_ev3q"></p><p>L'infrastructure de RentCRL se compose de quatre éléments clés :</p><ul><li><strong>Web</strong> : L'application web contenant les fichiers JavaScript, HTML, CSS.</li><li><strong>Backend</strong> : L'application backend renfermant les fichiers C# / .Net et responsable du fonctionnement logique du système.</li><li><strong>DataBase 'CosmosDB'</strong> : Le stockage sécurisé des données nécessaires au bon fonctionnement de RentCRL.</li><li><strong>Auth0</strong> : L'authentification et la gestion des mots de passe des utilisateurs.</li></ul><p>J'ai choisi ces trois diagrammes spécifiques pour leur pertinence même dans le cadre d'un projet modeste comme RentCRL. Ensemble, ils fournissent une perspective exhaustive des interactions utilisateur, de la structure des données et de l'infrastructure technique nécessaires pour le développement du système.</p><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3---conclusion">3 <strong>- CONCLUSION</strong><a href="#3---conclusion" class="hash-link" aria-label="Lien direct vers 3---conclusion" title="Lien direct vers 3---conclusion">​</a></h2><p>Ces diagrammes constituent une base solide pour commencer la réalisation concrète de RentCRL. Dans le prochain article, je commencerai à montrer comment créer la solution.</p>]]></content>
+        <author>
+            <name>Mickaël Céraline</name>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Présentation RentCRL]]></title>
