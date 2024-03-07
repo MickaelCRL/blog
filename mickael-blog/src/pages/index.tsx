@@ -37,7 +37,7 @@ function HomeAboutMe() {
     <section>
       <div className="container-section gap">
         <div className="image-about-me">
-          <img src="/img/mickaelceraline.jpg" alt="Image à propos de moi" />
+          <img src="/img/aproposdemoi2.jpg" alt="Image à propos de moi" />
         </div>
 
         <div className="about-me">
@@ -62,7 +62,7 @@ function HomeCompetence() {
   return (
     <section>
       <div className="container-section gap">
-        <div className="skill-text">
+        <div className="">
           <h2>Compétences</h2>
           <p>
             Mon parcours est caractérisé par une progression constante. Au fil
@@ -99,7 +99,7 @@ function HomeCompetence() {
 function HomeCertification() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <section>      
+    <section>
       <div className="block container-section ">
         <h2>Ma certification</h2>
         <div className="certification">
@@ -137,7 +137,7 @@ export default function Home(): JSX.Element {
   return (
     <div className="background-image">
       <Layout
-        title={`${siteConfig.title} | Développeur Full Stack`}
+        title={`Développeur Full Stack`}
         description="Mickaël Céraline est un jeune développeur Full Stack Angular & .NET C#, passionné par la création web avec une volonté d'apprendre en continu. Découvrez mon parcours et mes projets. <head />"
       >
         <HomeIntro />

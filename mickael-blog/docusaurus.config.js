@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 
-      image: 'img/docusaurus-social-card.jpg',
+      //image: '/img/aproposdemoi2.jpg',
       navbar: {
        
         title: 'Mickaël Céraline',        
