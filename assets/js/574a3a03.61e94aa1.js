@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmickael_blog=self.webpackChunkmickael_blog||[]).push([[234],{8537:(e,t,l)=>{l.r(t),l.d(t,{default:()=>s});var n=l(7961),r=l(7294);const s=function(){return r.createElement(n.Z,{title:"Mes Projets",description:"Une liste de mes projets"},r.createElement("div",null,r.createElement("h1",null,"Projet")))}}}]);
