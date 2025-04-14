@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmickael_blog=self.webpackChunkmickael_blog||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Architecture de RentCRL","permalink":"/blog/architecture-rentcrl"},{"title":"Pr\xe9sentation de RentCRL","permalink":"/blog/presentation-rentcrl"}]}')}}]);
