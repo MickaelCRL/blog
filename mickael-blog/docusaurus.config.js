@@ -1,53 +1,50 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mickaël Céraline',
-  tagline: 'Bienvenu sur mon site',
-  favicon: 'img/favicon.png',
+  title: "Mickaël Céraline",
+  tagline: "Bienvenu sur mon site",
+  favicon: "img/favicon.png",
 
   // Set the production url of your site here
-  url: 'https://www.mickaelceraline.com',
+  url: "https://www.mickaelceraline.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'MickaelCRL', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  organizationName: "MickaelCRL", // Usually your GitHub org/user name.
+  projectName: "blog", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr'],
+    defaultLocale: "fr",
+    locales: ["fr"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          
-          
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -56,48 +53,46 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-
       //image: '/img/aproposdemoi2.jpg',
       navbar: {
-       
-        title: 'Mickaël Céraline',        
+        title: "Mickaël Céraline",
         logo: {
-          alt: 'Mickaël Céraline Logo',
-          src: 'img/MC.svg',                
+          alt: "Mickaël Céraline Logo",
+          src: "img/MC.svg",
         },
-        hideOnScroll: true,        
-  
+        hideOnScroll: true,
+
         items: [
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/mickaelcrl',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/mickaelcrl",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
-        links: [          
+        style: "dark",
+        links: [
           {
-            title: 'Community',
-            items: [           
-             {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/in/mickael-ceraline/',
+            title: "Community",
+            items: [
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/mickael-ceraline/",
               },
             ],
           },
           {
-            title: 'More',            
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/MickaelCRL',
+                label: "GitHub",
+                href: "https://github.com/MickaelCRL",
               },
             ],
           },
@@ -107,6 +102,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["csharp"],
       },
     }),
 };
