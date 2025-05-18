@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[672],{3024:e=>{e.exports=JSON.parse('{"authors":[{"name":"Micka\xebl C\xe9raline","title":"D\xe9veloppeur Full Stack","url":"https://github.com/mickaelcrl","key":"mickael","page":null,"count":4}]}')}}]);
