@@ -2,6 +2,7 @@
 title: Architecture de RentCRL
 authors: mickael
 date: 2024-03-07
+slug: /architecture-rentcrl
 ---
 
 <!-- # 02 - Architecture de RentCRL -->

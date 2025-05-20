@@ -2,6 +2,7 @@
 title: rentcrl-domain-driven-design-minimal-api
 authors: mickael
 date: 2025-04-14
+slug: /rentcrl-domain-driven-design-minimal-api
 ---
 
 # RentCRL – entre Domain Driven Design et minimal API

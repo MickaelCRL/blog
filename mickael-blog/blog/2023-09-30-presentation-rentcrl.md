@@ -2,6 +2,7 @@
 title: Présentation de RentCRL
 authors: mickael
 date: 2023-09-30
+slug: /presentation-rentcrl
 ---
 
 <!-- # 01 - Présentation de RentCRL -->

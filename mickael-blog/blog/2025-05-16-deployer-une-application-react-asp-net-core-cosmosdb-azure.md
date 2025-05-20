@@ -2,6 +2,7 @@
 title: "Déployer une application React + ASP.NET Core + Cosmos DB sur Azure : gestion des environnements et des secrets"
 authors: mickael
 date: 2025-05-16
+slug: /deployer-une-application-react-asp-net-core-cosmosdb-azure
 ---
 
 Dans cet article, je partage mon expérience de déploiement de RentCRL sur Azure. Cette application comprend :
