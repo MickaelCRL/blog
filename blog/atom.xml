@@ -8,7 +8,7 @@
     <subtitle>Mickaël Céraline Blog</subtitle>
     <icon>https://www.mickaelceraline.com/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[Déployer une application React + ASP.NET Core + Cosmos DB sur Azure : gestion des environnements et des secrets]]></title>
+        <title type="html"><![CDATA[Déployer React et .NET sur Azure avec Cosmos DB : gérer environnements et secrets]]></title>
         <id>https://www.mickaelceraline.com/blog/deployer-une-application-react-asp-net-core-cosmosdb-azure/</id>
         <link href="https://www.mickaelceraline.com/blog/deployer-une-application-react-asp-net-core-cosmosdb-azure/"/>
         <updated>2025-05-16T00:00:00.000Z</updated>

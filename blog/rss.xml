@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
         <item>
-            <title><![CDATA[Déployer une application React + ASP.NET Core + Cosmos DB sur Azure : gestion des environnements et des secrets]]></title>
+            <title><![CDATA[Déployer React et .NET sur Azure avec Cosmos DB : gérer environnements et secrets]]></title>
             <link>https://www.mickaelceraline.com/blog/deployer-une-application-react-asp-net-core-cosmosdb-azure/</link>
             <guid>https://www.mickaelceraline.com/blog/deployer-une-application-react-asp-net-core-cosmosdb-azure/</guid>
             <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
