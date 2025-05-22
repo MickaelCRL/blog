@@ -1,11 +1,9 @@
 ---
-title: rentcrl-domain-driven-design-minimal-api
+title: RentCRL – entre Domain Driven Design et minimal API
 authors: mickael
 date: 2025-04-14
 slug: /rentcrl-domain-driven-design-minimal-api
 ---
-
-# RentCRL – entre Domain Driven Design et minimal API
 
 Suite du développement de RentCRL : l’application qui permet aux propriétaires d’envoyer automatiquement les quittances de loyer à leurs locataires. Après avoir travaillé sur le frontend en React et l’intégration d’Auth0 pour l’authentification, je me suis attaqué au backend. Je vous partage ici mes choix techniques et leur motivation.
 

@@ -24,7 +24,7 @@ function HomeIntro() {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a
             className="custom-button center-button black-white"
-            href="https://mickaelcrl.github.io/blog/blog"
+            href="https://www.mickaelceraline.com/blog"
           >
             Voir Le Blog
           </a>
@@ -136,7 +136,7 @@ export default function Home(): ReactNode {
       <div className="overlay"></div>
       <Layout
         title={`Développeur Full Stack`}
-        description="Mickaël Céraline est un jeune développeur Full Stack Angular & .NET C#, passionné par la création web avec une volonté d'apprendre en continu. Découvrez mon parcours et mes projets. <head />"
+        description="Mickaël Céraline est un jeune développeur Full Stack React & .NET C#, passionné par la création web avec une volonté d'apprendre en continu. Découvrez mon parcours et mes projets. <head />"
       >
         <HomeIntro />
         <HomeAboutMe />

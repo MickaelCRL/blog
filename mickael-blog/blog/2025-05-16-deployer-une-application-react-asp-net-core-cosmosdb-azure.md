@@ -1,5 +1,5 @@
 ---
-title: "Déployer une application React + ASP.NET Core + Cosmos DB sur Azure : gestion des environnements et des secrets"
+title: "Déployer React et .NET sur Azure avec Cosmos DB : gérer environnements et secrets"
 authors: mickael
 date: 2025-05-16
 slug: /deployer-une-application-react-asp-net-core-cosmosdb-azure
@@ -273,6 +273,8 @@ Bien sûr il ne faut pas oublier d’importer la variable dans le **index.html**
 ```
 
 Avec tout ça, je peux mettre à jour le container app et spécifier l’environnement simplement.
+
+Lien de l'app : https://ca-rentcrl-app-stg-fc.politewater-4ee63bcd.francecentral.azurecontainerapps.io/
 
 ## Conclusion
 
