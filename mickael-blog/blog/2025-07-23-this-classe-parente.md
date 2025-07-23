@@ -1,7 +1,7 @@
 ---
 title: 'En C#, "this" dans une classe parente ne devient pas le type de l’enfant'
 authors: mickael
-date: 2025-05-16
+date: 2025-07-23
 slug: /this-classe-parente
 ---
 
