@@ -17,9 +17,9 @@ Mon objectif principal est de montrer comment je suis passé de l’environnemen
 
 <!-- truncate -->
 
-## 1. Développement en local
+## 1 - Développement en local
 
-### 1.1. Communication avec l’API
+### 1.1 - Communication avec l’API
 
 En local, il est facile de connecter le tout. Le frontend appelle l’API via un `fetch` avec le token d'Auth0 sur le bon endpoint. Dans mon cas, l’API permet juste de créer un owner, alors je me rends sur `apiBaseUrl/owners`, où `apiBaseUrl` équivaut à `http://localhost:5047` pour le moment. Au départ, j’enregistre la variable dans un fichier `.env`, ce qui donne :
 
@@ -35,7 +35,7 @@ await fetch(`${import.meta.env.VITE_API_BASE_URL}/owners`, {
 });
 ```
 
-### 1.2. Communication entre l’application et la base de données
+### 1.2 - Communication entre l’application et la base de données
 
 Ensuite, l’API récupère les informations puis crée le owner dans la base de données.
 
@@ -95,7 +95,7 @@ Voyons comment j’ai procédé.
 
 En local, l’environnement est celui de "Development" : tout tourne sur ma machine. Or, je veux aller en production ou, du moins pour le moment, en "Staging" (pré-prod). C’est-à-dire que je veux rendre l’application accessible à tous, et pour cela, j’ai choisi d’utiliser une solution serverless proposée par Azure : les Container Apps. Ainsi, les trois entités (application, API et Cosmos DB) ne tourneront plus sur ma machine, donc l’environnement change, tout comme les variables de configuration que j’ai mentionnées plus tôt. Voici comment j’ai adapté mes variables en fonction de l’environnement.
 
-## 2. Préparation d’Azure
+## 2 - Préparation d’Azure
 
 D’abord, je me suis rendu sur Azure et j’ai créé une base de données Cosmos DB : [https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal)
 
@@ -103,7 +103,7 @@ Ensuite, j’ai créé deux Container Apps : un pour faire tourner l’image de 
 
 Puis, j’ai créé un Container Registry pour pousser les images de mon application et de mon API, qui seront récupérées par les Container Apps : [https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
 
-## 3. Déploiement de l’API sur Azure
+## 3 - Déploiement de l’API sur Azure
 
 ASP.NET gère les variables d’environnement automatiquement lors du lancement de l’application. Comme je l’ai montré plus tôt, grâce au fichier `appsettings.json`, je peux accéder aux variables de configuration. Maintenant, il suffit de séparer les variables qui changent en fonction de l’environnement dans les `appsettings` correspondants.
 
@@ -172,7 +172,7 @@ Et que ton image écoute le port 80. Dans le dockerfile : **ENV ASPNETCORE_HTTP_
 
 L’api fonctionne dans l’environnement de “Development” mais également en “Staging”. Disponible ici : [https://ca-rentcrl-api-stg-fc.politewater-4ee63bcd.francecentral.azurecontainerapps.io/scalar/v1#tag/rentcrlweb](https://ca-rentcrl-api-stg-fc.politewater-4ee63bcd.francecentral.azurecontainerapps.io/scalar/v1#tag/rentcrlweb)
 
-## 4. Deploiement de l’app sur Azure
+## 4 - Deploiement de l’app sur Azure
 
 Pour l’app, j’utilise React, et contrairement à [ASP.NET](http://asp.net/), je n’ai pas trouvé de gestion des variables d’environnement aussi efficace dans React. C’est pourquoi Rémi Céraline ([https://www.remiceraline.com](https://www.remiceraline.com/)) m’a montré une approche plutôt intéressante que je vais partager ici.
 
@@ -191,13 +191,11 @@ az containerapp update `
     API_BASE_URL=https://ca-rentcrl-api-stg-fc.politewater-4ee63bcd.francecentral.azurecontainerapps.io
 ```
 
-Maintenant dans mon application React, dans le dossier **public**, j’ai créé un dossier **config** dans lequel je cré un fichier env.js et env.template.js.
-
 Dans mon application React, dans le dossier **public**, j’ai créé un dossier **config** dans lequel j’ai mis deux fichiers : `env.js` et `env.template.js`.
 
 ![image.png](../static/img/deploiement-azure/image1.png)
 
-### env.js
+### 4.1 - env.js
 
 ```jsx
 let globalConfig = {
@@ -205,7 +203,7 @@ let globalConfig = {
 };
 ```
 
-### env.template.js
+### 4.2 - env.template.js
 
 ```jsx
 let globalConfig = {
@@ -235,7 +233,7 @@ await fetch(`${globalConfig.apiBaseUrl}/owners`, {
 });
 ```
 
-### À quoi ça sert ?
+### 4.3 - À quoi ça sert ?
 
 Quand je build mon image, React crée un dossier **dist** qui contient le **bundler** avec tous les fichiers réunis dans un seul gros fichier.
 
@@ -276,13 +274,13 @@ Avec tout ça, je peux mettre à jour le container app et spécifier l’environ
 
 Lien de l'app : https://ca-rentcrl-app-stg-fc.politewater-4ee63bcd.francecentral.azurecontainerapps.io/
 
-## Conclusion
+## 5 - Conclusion
 
 En suivant cette approche, j'ai pu :
 
 - **Séparer les configurations** selon les environnements, ce qui facilite le déploiement et la maintenance.
 
-- **Sécuriser les secrets** en utilisant Azure Key Vault.
+- **Sécuriser les secrets** en utilisant Azure Secrets.
 
 - **Automatiser le déploiement** du frontend et du backend avec Azure Container Apps.
 
